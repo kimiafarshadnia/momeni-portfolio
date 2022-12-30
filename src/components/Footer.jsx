@@ -1,8 +1,8 @@
 const Footer = () => {
     return ( 
-        <div className="bg-violet-500 text-white text-xs sm:text-sm p-3 sm:p-4 ">
-            &copy; The conviction does not involve copyright issues
-        </div>
+        <footer className="absolute bottom-0 left-0 w-full bg-violet-500 dark:bg-sky-900 text-white text-xs  p-2 ">
+            <p>&copy; The conviction does not involve copyright issues</p>
+        </footer>
      );
 }
  
