@@ -9,8 +9,8 @@ const HomePage = (props) => {
             <SectionHero/>
             <AboutUs/>
             <Slider/>
-            <ContactUs/>
-            salammmm
+            {/* <ContactUs/> */}
+        
         </div>
      );
 }

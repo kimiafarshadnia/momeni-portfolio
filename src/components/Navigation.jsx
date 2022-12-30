@@ -3,9 +3,9 @@ import { useState } from "react";
 import 'boxicons';
 const items = [
   { name: "Home", to: "/"},
-  { name: "About Us", to: "/about-us" },
+  { name: "About Me", to: "/about-me" },
   { name: "Resume", to: "/resume" },
-  { name: "Contact Us", to: "/contact-us" },
+  { name: "Contact Me", to: "/contact-me" },
 ];
 
 
@@ -21,7 +21,7 @@ const Navigation = () => {
         </div>
       </div>
 
-      <ul className={`transition-color md:flex items-center md:z-auto left-0 w-full md:w-auto transition-all duration-500 ease-in ${open ? 'h-32 opacity-100 ' : 'h-0 opacity-0'} md:h-8 md:opacity-100`}>
+      <ul className={`transition-color md:flex items-center md:z-auto left-0 w-full md:w-auto transition-all duration-500 ease-in ${open ? 'h-32 block ' : 'h-0 hidden'} md:h-8`}>
         {items.map((item) => {
           return (
             <li key={item.to} className="mb-2 md:mb-0 md:ml-8">
@@ -35,9 +35,6 @@ const Navigation = () => {
           );
         })}
       </ul>
-
-
-      
 
     </nav>
   );
