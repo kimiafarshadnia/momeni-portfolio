@@ -5,12 +5,11 @@ import SectionHero from './../components/SectionHero';
 
 const HomePage = (props) => {
     return ( 
-        <div>
+        <div className='p-4 sm:p-3 md:p-0'>
             <SectionHero/>
             <AboutUs/>
             <Slider/>
             <ContactUs/>
-        <p className='text-violet-500 dark:text-orange-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur enim perferendis nisi rem fuga nostrum, iure nihil itaque repudiandae aspernatur rerum expedita esse repellat officia incidunt autem amet minima recusandae!</p>
         </div>
      );
 }

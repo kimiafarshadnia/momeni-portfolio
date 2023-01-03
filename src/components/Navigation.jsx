@@ -3,8 +3,8 @@ import { useState } from "react";
 import 'boxicons';
 const items = [
   { name: "Home", to: "/"},
-  { name: "About Me", to: "/about-me" },
   { name: "Resume", to: "/resume" },
+  { name: "About Me", to: "/about-me" },
   { name: "Contact Me", to: "/contact-me" },
 ];
 

@@ -14,7 +14,7 @@ import { Pagination, Navigation,EffectFade  } from "swiper";
 
 const Slider = () => {
     return ( 
-        <section className='mb-4 flex items-center justify-center'>
+        <section className='my-4 flex items-center justify-center'>
             <div className="w-full">
                 <div className='h-64 bg-violet-200 flex justify-center items-center'>
                     <Swiper
