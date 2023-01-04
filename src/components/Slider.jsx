@@ -3,40 +3,50 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
 
 import "../App.css";
 
 // import required modules
-import { Pagination, Navigation,EffectFade  } from "swiper";
+import { EffectCoverflow } from "swiper";
 
 
 const Slider = () => {
     return ( 
-        <section className='my-4 flex items-center justify-center'>
-            <div className="w-full">
-                <div className='h-64 bg-violet-200 flex justify-center items-center'>
+        <section className='my-4 flex flex-col items-center justify-center p-4 sm:p-3 md:p-0'>
+            <h1 className="text-center text-2xl font-semibold mb-4 capitalize">dream home</h1>
+            <p className="text-center mb-8 capitalize">the last project</p>
+            <div className="w-full md:w-4/5">
+                <div className='flex justify-center items-center'>
                     <Swiper
-                   effect="fade"
-                        pagination={{
-                        type: "fraction",
+                        effect={"coverflow"}
+                        grabCursor={true}
+                        centeredSlides={true}
+                        slidesPerView={"auto"}
+                        coverflowEffect={{
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true,
                         }}
-                        navigation={true}
-                        modules={[Pagination, Navigation, EffectFade]}
-                        className="mySwiper bg-violet-100"
+                        modules={[EffectCoverflow]}
+                        className="mySwiper"
                     >
-                        <SwiperSlide>Slide 1</SwiperSlide>
-                        <SwiperSlide>Slide 2</SwiperSlide>
-                        <SwiperSlide>Slide 3</SwiperSlide>
-                        <SwiperSlide>Slide 4</SwiperSlide>
-                        <SwiperSlide>Slide 5</SwiperSlide>
-                        <SwiperSlide>Slide 6</SwiperSlide>
-                        <SwiperSlide>Slide 7</SwiperSlide>
-                        <SwiperSlide>Slide 8</SwiperSlide>
-                        <SwiperSlide>Slide 9</SwiperSlide>
+                        <SwiperSlide  className="flex justify-center">
+                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                        </SwiperSlide>
+                        <SwiperSlide className="flex justify-center">
+                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                        </SwiperSlide>
+                        <SwiperSlide className="flex justify-center">
+                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                        </SwiperSlide>
+                       
                     </Swiper>
                 </div>
+                
             </div>
         </section>
      );

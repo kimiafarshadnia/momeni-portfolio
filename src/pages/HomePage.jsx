@@ -2,13 +2,15 @@ import AboutUs from './../components/AboutUs';
 import Slider from './../components/Slider';
 import ContactUs from './../components/ContactUs';
 import SectionHero from './../components/SectionHero';
+import StepOfBiulding from '../components/StepsOfBiulding';
 
 const HomePage = (props) => {
     return ( 
-        <div className='p-4 sm:p-3 md:p-0'>
+        <div>
             <SectionHero/>
             <AboutUs/>
             <Slider/>
+            <StepOfBiulding/>
             <ContactUs/>
         </div>
      );
