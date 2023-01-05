@@ -14,10 +14,12 @@ import { EffectCoverflow } from "swiper";
 
 const Slider = () => {
     return ( 
-        <section className='my-4 flex flex-col items-center justify-center p-4 sm:p-3 md:p-0'>
-            <h1 className="text-center text-2xl font-semibold mb-4 capitalize">dream home</h1>
-            <p className="text-center mb-8 capitalize">the last project</p>
-            <div className="w-full md:w-4/5">
+        <section className='flex flex-col items-center justify-center pb-8'>
+            <div className="  text-center pt-8">
+                <h1 className=" mb-4 capitalize">dream home</h1>
+                <p className="text-2xl font-semibold mb-8 capitalize">the last project</p>
+            </div>
+            <div className="w-full md:w-4/5 pb-12">
                 <div className='flex justify-center items-center'>
                     <Swiper
                         effect={"coverflow"}

@@ -24,10 +24,10 @@ const Navigation = () => {
       <ul className={`transition-color md:flex items-center md:z-auto left-0 w-full md:w-auto transition-all duration-500 ease-in ${open ? 'h-32 block ' : 'h-0 hidden'} md:h-8`}>
         {items.map((item) => {
           return (
-            <li key={item.to} className="mb-2 md:mb-0 md:ml-8">
+            <li key={item.to} className="mb-2 md:mb-0 md:ml-8 text-gray-400 dark:text-gray-400">
               <NavLink
                 to={item.to}
-               className={(navData)=> (navData.isActive ? "text-violet-500" : "")}                                                                         
+               className={(navData)=> (navData.isActive ? "text-bold text-gray-800 dark:text-gray-100" : "")}                                                                         
               >
                 {item.name}
               </NavLink>

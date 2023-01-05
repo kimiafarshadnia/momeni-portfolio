@@ -69,7 +69,7 @@ darkQuery.addEventListener("change", (e)=>{
                     <button
                         key={option.text}
                         onClick={()=> setTheme(option.text)}
-                        className={`flex p-1 ${theme === option.text && "bg-violet-100 rounded-full "}`}
+                        className={`flex p-1 ${theme === option.text && "bg-white dark:bg-sky-100 rounded-full "}`}
                     >
                         <box-icon name={option.icon}></box-icon>
                     </button>
